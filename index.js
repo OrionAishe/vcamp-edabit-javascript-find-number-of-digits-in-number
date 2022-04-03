@@ -1,6 +1,10 @@
 function digit (num){
     //contador base para número menor que 10
     let count = 1;
+    // correção para números negativos
+    if (num < 0) {
+        num *= -1;
+    }
     //looping divisor de dezenas
     for(i = 9; i < num;){
         num /= 10;
